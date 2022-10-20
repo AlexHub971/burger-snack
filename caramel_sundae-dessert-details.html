@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web Application exercice">
+    <meta name="author" content="Alex HUBERT">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order a Dessert, Caramel Sundae | Burger Snack</title>
+
+    <!--    GOOGLE FONT -->
+
+
+    <!--        BOOTSTRAP 5  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/css/bootstrap.min.css"
+        integrity="sha512-o/MhoRPVLExxZjCFVBsm17Pkztkzmh7Dp8k7/3JrtNCHh0AQ489kwpfA3dPSHzKDe8YCuEhxXq3Y71eb/o6amg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--        CUSTOM CSS    -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--        FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- START HTML CONTENT -->
+
+    <!--        START HEADER BLOCK  -->
+    <header class="d-flex">
+        <div class="me-auto ms-3 mt-3">
+            <a href="listing-menu.html">
+                <i class="fas fa-chevron-left rounded-circle bg-light py-1 px-2 shadow h3 text-black"></i>
+            </a>
+        </div>
+        <div class="ms-auto me-3 mt-3">
+            <i id="favorite" class="far fa-heart rounded-circle bg-light p-1 shadow h3"></i>
+        </div>
+    </header>
+    <!--      END HEADER BLOCK  -->
+
+    <!--      MAIN BLOCK  -->
+    <main class="container-fluid">
+        <div class="row">
+            <div class="yellow-square col-10">
+                <img class="w-100 m-auto d-block" src="./images/dessert/caramel_sundae.png" alt="Caramel Sundae">
+            </div>
+            <div class="col-2 d-flex flex-column justify-content-end gap-3">
+                <!-- <span class="size-selector">S</span> -->
+                <span class="size-selector">M</span>
+                <span class="size-selector">L</span>
+                <span class="size-selector">XL</span>
+            </div>
+        </div>
+
+        <h1 class="fw-bolder h1 text-center mt-5 mb-4">
+            <!-- NAME IN js/main.js -->
+        </h1>
+        <div class="text-center fw-bold my-4 h1">
+            <span class="text-orange small">$</span>
+            <span id="item-price">
+                <!-- PRICE IN js/main.js -->
+            </span>
+        </div>
+        <div class="fw-bold d-flex justify-content-center my-4 gap-4 position-relative">
+            <span id="decrease-quantity"></span>
+            <span id="item-quantity" class="d-flex justify-content-center gap-4">
+                <!-- DO NOT REMOVE THE 1 // DEFAULT VALUE -->
+                1
+            </span>
+            <span id="increase-quantity"></span>
+        </div>
+
+        <div>
+            <ul class="list-unstyled d-flex justify-content-around">
+                <li id="rating-detail-page">4.7</li>
+                <li id="nutritional-value-detail-page">
+                    <!-- NUTRITIONAL VALUE IN js/main.js -->
+                </li>
+                <li id="delivery-delay-detail-page">30 min</li>
+            </ul>
+        </div>
+
+        <p class="description text-lightgrey px-2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis error sit nihil qui autem quo aspernatur,
+            earum obcaecati possimus sequi! Aliquam nisi consectetur, labore nemo ... <span
+                class="text-orange fw-bold">More</span>
+        </p>
+
+    </main>
+    <!--      END MAIN BLOCK  -->
+
+
+    <!--        START FOOTER BLOCK  -->
+    <footer class="container-fluid mt-5 ps-4 pe-3 g-0">
+        <div class="row g-0 m-0 p-0">
+            <div class="col-4 g-0 m-0 p-0">
+                <p class="h5 m-0 p-0">
+                    <span id="total-text" class="text-lightgrey">
+                        <!-- TEXT CREATED IN js/main.js -->
+                    </span>
+                    <br>
+                    <span id="total-price" class="text-orange fw-bold display-6">
+                        <!-- TOTAL CALCULATED IN js/main.js -->
+                    </span>
+                </p>
+            </div>
+            <div class="col-8 g-0 m-0 p-0 d-flex align-items-end justify-content-end">
+                <button class="btn btn-lg bg-orange w-100 text-white fw-bold h2 ls-1">
+                    Add to cart
+                </button>
+            </div>
+        </div>
+    </footer>
+    
+    <!--      END FOOTER BLOCK -->
+</body>
+
+
+<!-- END OF HTML CONTENT -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.bundle.min.js"
+    integrity="sha512-ndrrR94PW3ckaAvvWrAzRi5JWjF71/Pw7TlSo6judANOFCmz0d+0YE+qIGamRRSnVzSvIyGs4BTtyFMm3MT/cg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!--        MY CUSTOMED JS    -->
+    <script type="text/javascript" src="./js/main.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Web Application exercice">
+    <meta name="author" content="Alex HUBERT">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <!--        PAGE TITLE    -->
+    <title>Burger Snack - Accueil</title>
+
+    <!--    GOOGLE FONT -->
+
+
+    <!--        BOOTSTRAP 5  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/css/bootstrap.min.css"
+        integrity="sha512-o/MhoRPVLExxZjCFVBsm17Pkztkzmh7Dp8k7/3JrtNCHh0AQ489kwpfA3dPSHzKDe8YCuEhxXq3Y71eb/o6amg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--        CUSTOM CSS    -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--        FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+
+<body>
+    <!-- background burger div -->
+    <div id="home-bg-burger">
+
+
+        <!--      MAIN BLOCK  -->
+        <!-- BLACK OVERLAY (.6 opacity) BACKGROUND SO THAT THE TEXT IS MORE READABLE
+         -->
+        <main style="height: 100vh;" class="text-white bg-black-overlay">
+            <h1 id="home-page" class="mx-auto fw-bolder">
+                Burger
+                <br>
+                <!-- Crown is a pseudo element -->
+                Sn<span id="crown">a</span>ck
+            </h1>
+
+
+            <div id="middle" class="d-flex align-items-end mb-2">
+                <a href="listing-menu.html"
+                    class="text-white text-capitalize text-decoration-none fw-bold display-3 pe-5 mb-3">
+                    <span class="text-decoration-underline">The fastest in delivery</span>
+                    <span id="home_food" class="text-orange text-decoration-underline">food</span>
+                </a>
+            </div>
+
+            <div class="px-4 mb-3">
+                <button class="btn btn-lg bg-orange text-white fw-bold w-100">
+                    Sign in
+                </button>
+            </div>
+
+            <p class="h6 px-4 text-white">
+                Don't have an account? <a href="#" class="text-orange">Sign up</a>
+            </p>
+
+        </main>
+        <!--      END MAIN BLOCK  -->
+    </div>
+
+
+    <!-- END OF HTML CONTENT -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.bundle.min.js"
+        integrity="sha512-ndrrR94PW3ckaAvvWrAzRi5JWjF71/Pw7TlSo6judANOFCmz0d+0YE+qIGamRRSnVzSvIyGs4BTtyFMm3MT/cg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--        MY CUSTOMED JS    -->
+    <script type="text/javascript" src="./js/main.js" defer></script>
+</body>
+
+</html>

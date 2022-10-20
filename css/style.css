@@ -1,0 +1,418 @@
+/* start */
+
+/* =========================
+    TABLE DES MATIERES
+    1. Propriétés globales
+        1.1 header
+        1.2 nav
+        1.3 body
+        1.4 main
+        1.5 article
+        1.6 section
+        1.7 footer
+        1.8 img
+        1.9 ul li
+
+    2. Typographie
+        2.1 titres
+        2.2 liens
+        2.3 paragraphes
+
+    3. Disposition // Layout
+        3.1 cover
+        3.2 footer
+        3.3 pseudo-elements
+
+    4. Composants
+        4.1 Logo
+        4.2 menu de navigation
+        4.3 carrousel
+        4.4 boutons
+   ========================= */
+
+
+
+
+/* ============================
+    1. Propriétés Globales (MINI RESET)
+        1.1 header
+        1.2 nav ul
+        1.3 body
+        1.4 main
+        1.5 article
+        1.6 section
+        1.7 aside
+        1.8 footer
+        1.9 img
+        1.10 ul li
+        1.11 classes globales
+   ============================ */
+/**** 1.1 HEADER ****/
+/* header {
+    
+} */
+
+
+/**** 1.2 NAV ****/
+/* remettre a zero les listes non ordonnees */
+/* nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+} */
+
+/**** 1.3 BODY ****/
+/* pour retirer les marges exterieures et definir la police du document et la couleur de base */
+/* body {
+} */
+
+/**** 1.4 MAIN ****/
+
+/* main {
+    
+} */
+
+/**** 1.5 ARTICLE ****/
+
+
+/**** 1.6 SECTION ****/
+
+/**** 1.7 ASIDE ****/
+
+/**** 1.8 FOOTER ****/
+
+/**** 1.9 IMG ****/
+
+
+/* ======================
+    2. Typographies
+        2.1 titres
+        2.2 paragraphes
+        2.3 liens
+   ====================== */
+.bg-black {
+    background-color: black;
+}
+
+.text-orange {
+    /*
+        utilisé pour :
+        - page détail > signe euro
+        - accueil
+                > lien "Food"
+                > Lien "Sign up"
+    */
+    color: #fd7e14;
+}
+
+.text-lightgrey {
+    /*
+    pour les descriptions et le texte pour introduire le total d'achat
+    */
+    color: #808080;
+}
+
+.ls-1 {
+    letter-spacing: 0.1em;
+}
+
+.description {
+    /* pour les descriptions des pages détails et du listing des menus */
+    font-size: 0.7em;
+}
+
+#home-page {
+    width: 100px;
+}
+
+#menu-page {
+    width: 90%;
+}
+
+#footer-list-menu a {
+    color: #212529;
+}
+
+/* =========================
+    3. Disposition // Layout
+        3.0 header
+        3.1 cover
+        3.2 main
+        3.3 footer
+        3.4 pseudo-elements
+   ========================= */
+
+body, main {
+    margin: 0;
+    padding: 0;
+}
+
+#header-menu div:nth-child(2) {
+    top: 1em;
+    right: 1em;
+}
+
+#home-bg-burger {
+    background-image: url(../images/burger/burger-home.avif);
+    background-repeat: no-repeat;
+    background-size: 250%;
+    background-position: top -400px left -150px;
+    height: 100vh;
+}
+
+.bg-black-overlay {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+#middle {
+    height: 72vh;
+    padding: 20px 0px 15px 20px;
+}
+
+#footer-list-menu {
+    height: 5vh;
+}
+
+/* ====================
+    4. Composants
+        4.1 Logo
+        4.2 menu de navigation
+        4.3 carrousel
+        4.4 boutons
+   ==================== */
+
+.bg-orange {
+    background-color: #fd7e14;
+}
+
+#crown,
+#home_food,
+#search-bar,
+.ico-burger,
+.ico-meat,
+.ico-desserts,
+.ico-salad,
+.menu-card-text-rating,
+.menu-card-text-distance,
+.menu-card-price,
+#menu-page,
+.favorite,
+.favorite-active,
+.yellow-square,
+#rating-detail-page,
+#nutritional-value-detail-page,
+#delivery-delay-detail-page,
+#item-quantity {
+    position: relative;
+}
+
+#crown::before,
+#search-bar::before,
+.menu-card-text-rating::before, 
+.menu-card-text-distance::before,
+.menu-card-price::after,
+#rating-detail-page::before,
+#nutritional-value-detail-page::before,
+#delivery-delay-detail-page::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+#crown::before {
+    content: "\f521";
+    position: absolute;
+    color: #FFCA2C;
+    font-size: 0.3em;
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    top: 5px;
+}
+
+#search-bar::before {
+    content: "\f002";
+    display: inline-block;
+    position: relative;
+    font-size: 1.2em;
+    left: 60px;
+}
+
+.ico-burger::before,
+.ico-meat::before,
+.ico-desserts::before,
+.ico-salad::before {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.ico-burger::before, #menu-page::after {
+    content: "\1F354";
+}
+
+.ico-meat::before {
+    content: "\1F969";
+}
+
+.ico-desserts::before {
+    content: "\1F368";
+}
+
+.ico-salad::before {
+    content: "\1F957";
+}
+
+.menu-card-text-rating::before,
+#rating-detail-page::before {
+    content: "\f005"; /* fas-star */
+    color: #fd7e14;
+    margin-right: 5px;
+}
+
+.menu-card-text-distance::before {
+    content: "\7C"; /* caractère pipe */
+    color: #212529;
+    margin-inline: 5px;
+}
+
+.menu-card-price::after {
+    content: "\f153"; /* far fa-euro */
+    color: #fd7e14;
+    position: relative;
+    font-size: 0.5em;
+    left: -2px;
+    bottom: 10px;
+}
+
+.favorite, .favorite-active {
+    pointer-events: none;
+}
+
+.favorite::before,
+.favorite-active::before {
+    pointer-events:all;
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    transform: scale(1.5);
+    cursor:pointer;
+}
+
+.favorite::before {
+    content: "\1F90D"; /* white heart emoji */
+}
+
+.favorite-active::before {
+    content: "\2764"; /* red heart emoji */
+}
+
+.yellow-square::before {
+    content: "";
+    display: block;
+    background: linear-gradient(#fd7e14,rgba(255,193,7,.1));
+    width: 75%;
+    height: 100%;
+    /* border-bottom: 100px solid #fd7e14;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 100px; */
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+#rating-detail-page::before {
+    /* far-star */
+    font-size: 1em;
+    font-weight: 400;
+}
+
+#nutritional-value-detail-page::before,
+#delivery-delay-detail-page::before {
+    color: #fd7e14;
+    margin-right: 5px;
+}
+
+
+#nutritional-value-detail-page::before {
+    content: "\f06d"; /* fas-fa-fire */
+}
+
+#delivery-delay-detail-page::before {
+    content: "\f017"; /* far-fa-clock */
+    font-weight: 400;
+}
+
+.size-selector,
+.size-selector-active {
+    border: 1px solid #828282;
+    padding: .4em;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.size-selector {
+    border: 1px solid #828282;
+}
+
+.size-selector-active {
+    border: none;
+    background-color: #fd7e14;
+    color: #FFFFFF;
+}
+
+#decrease-quantity, #increase-quantity {
+    pointer-events: none;
+}
+
+#decrease-quantity::before,
+#increase-quantity::after {
+    pointer-events: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c0c0c0;
+    background-color: #FFFFFF;
+    color: #fd7e14;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    top: -5px;
+    cursor: pointer;
+}
+
+#decrease-quantity::before {
+    content: "-";
+    left: calc(50% - 60px);
+}
+
+#increase-quantity::after {
+    content: "+";
+    right: calc(50% - 60px);
+}
+
+#decrease-quantity:active::before,
+#increase-quantity:active::after {
+    border: none;
+    background-color: #fd7e14;
+    color: white;
+}
+
+
+#trapezoid {
+    border-bottom: 100px solid red;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 100px;
+  }
+
+/* end */
