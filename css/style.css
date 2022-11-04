@@ -173,6 +173,16 @@ body, main {
     height: 5vh;
 }
 
+
+footer button.btn {
+    color: #fff;;
+}
+
+footer button.btn:hover {
+    color:#fd7e14;
+    border-color: #fd7e14;
+}
+
 /* ====================
     4. Composants
         4.1 Logo
